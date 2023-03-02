@@ -1,0 +1,54 @@
+cmake_minimum_required(VERSION 3.16.0)
+project(YandexAlgorithms VERSION 0.1.0)
+
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+
+set(PROJECT_SOURCE_DIR_A "${PROJECT_SOURCE_DIR}/A")
+set(PROJECT_SOURCE_DIR_B "${PROJECT_SOURCE_DIR}/B")
+set(CMAKE_PROJECT_INCLUDE_BEFORE ON)
+
+
+add_executable("${PROJECT_NAME}_A1"
+"${PROJECT_SOURCE_DIR_A}/_1.cpp"
+)
+
+add_executable("${PROJECT_NAME}_A2"
+"${PROJECT_SOURCE_DIR_A}/_2.cpp"
+)
+
+add_executable("${PROJECT_NAME}_A3"
+"${PROJECT_SOURCE_DIR_A}/_3.cpp"
+)
+
+add_executable("${PROJECT_NAME}_A4"
+"${PROJECT_SOURCE_DIR_A}/_4.cpp"
+)
+
+add_executable("${PROJECT_NAME}_A5"
+"${PROJECT_SOURCE_DIR_A}/_5.cpp"
+)
+
+add_executable("${PROJECT_NAME}_A6"
+"${PROJECT_SOURCE_DIR_A}/_6.cpp"
+)
+
+add_executable("${PROJECT_NAME}_A7"
+"${PROJECT_SOURCE_DIR_A}/_7.cpp"
+)
+
+add_executable("${PROJECT_NAME}_A8"
+"${PROJECT_SOURCE_DIR_A}/_8.cpp"
+)
+
+add_executable("${PROJECT_NAME}_A9"
+"${PROJECT_SOURCE_DIR_A}/_9.cpp"
+)
+
+add_executable("${PROJECT_NAME}_A10"
+"${PROJECT_SOURCE_DIR_A}/_10.cpp"
+)
+
+add_executable("${PROJECT_NAME}_A11"
+"${PROJECT_SOURCE_DIR_A}/_11.cpp"
+)
