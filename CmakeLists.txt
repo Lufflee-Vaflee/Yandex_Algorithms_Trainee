@@ -52,3 +52,11 @@ add_executable("${PROJECT_NAME}_A10"
 add_executable("${PROJECT_NAME}_A11"
 "${PROJECT_SOURCE_DIR_A}/_11.cpp"
 )
+
+add_executable("${PROJECT_NAME}_A12"
+"${PROJECT_SOURCE_DIR_A}/_12.cpp"
+)
+
+add_executable("${PROJECT_NAME}_A13"
+"${PROJECT_SOURCE_DIR_A}/_13.cpp"
+)
