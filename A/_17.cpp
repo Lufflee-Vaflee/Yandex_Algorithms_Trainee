@@ -1,4 +1,5 @@
 #include <iostream>
+#include <iomanip>
 #include <string>
 #include <stack>
 #include <set>
@@ -23,43 +24,26 @@ int main()
         case '+':
             long long goblin;
             std::cin >> goblin;
-            goblins.emplace_back(goblin);
-            midle--;
-            if(goblins.size() == 1)
-            {
-                midle = goblins.begin();
-            }
-            else if (goblins.size() % 2 == 1)
+            goblins.push_back(goblin);
+            if (goblins.size() % 2 == 1)
             {
                 midle++;
             }
             break;
         case '*':
             std::cin >> goblin;
-            midle = goblins.begin();
-            goblins.insert(++midle, goblin);
-            --midle;
-            --midle;
-            if(goblins.size() == 1)
+            midle = goblins.insert(++midle, goblin);
+            if (goblins.size() % 2 == 0)
             {
-                midle = goblins.begin();
-            }
-            else if (goblins.size() % 2 == 1)
-            {
-                midle++;
+                midle--;
             }
             break;
         case '-':
             std::cout << *goblins.begin() << std::endl;
             goblins.pop_front();
-            midle++;
-            if(goblins.size() == 1)
+            if (goblins.size() % 2 == 1)
             {
-                midle = goblins.begin();
-            }
-            else if (goblins.size() % 2 == 0)
-            {
-                midle--;
+                midle++;
             }
             break;
         }
