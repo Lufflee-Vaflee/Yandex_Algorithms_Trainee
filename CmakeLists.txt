@@ -76,3 +76,7 @@ add_executable("${PROJECT_NAME}_A16"
 add_executable("${PROJECT_NAME}_A17"
 "${PROJECT_SOURCE_DIR_A}/_17.cpp"
 )
+
+add_executable("${PROJECT_NAME}_A18"
+"${PROJECT_SOURCE_DIR_A}/_18.cpp"
+)
