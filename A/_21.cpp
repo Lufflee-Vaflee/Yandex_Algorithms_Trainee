@@ -10,7 +10,7 @@
 
 long long* pr;
 long long notrec(long long num);
-std::map<long long, long long> pow;
+std::map<long long, long long> Pow;
 
 
 int main()
@@ -26,7 +26,7 @@ int main()
     while(p < 1000000)
     {
         p = n * n * n;
-        pow.emplace(p, n);
+        Pow.emplace(p, n);
         n++;
     }
 
@@ -46,7 +46,7 @@ long long notrec(long long num)
         {
             flag = true;
         }
-        auto t = pow.upper_bound(i);
+        auto t = Pow.upper_bound(i);
         t--;
         long long temp = (*t).second;
         while (temp != 0)
